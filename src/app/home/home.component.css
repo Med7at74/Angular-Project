@@ -1,0 +1,9 @@
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.bg-color {
+  background-color: rgb(26, 188, 156);
+}

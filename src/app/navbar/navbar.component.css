@@ -1,0 +1,21 @@
+.navbar {
+  background-color: rgb(44, 62, 80);
+}
+.navbar-brand,
+.nav-link {
+  color: #fff;
+}
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bg-color {
+  background-color: rgb(26, 188, 156);
+  border-radius: 10px;
+}
+/* :has(.nav-link) nav {
+  height: 60px;
+}
+:has(nav) nav {
+  height: 80px;
+} */

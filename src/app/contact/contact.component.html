@@ -1,0 +1,66 @@
+<section class="py-5">
+  <div class="container py-4">
+    <div class="pt-4">
+      <h2 class="text-center fw-bolder fs-1 text-dark-app">
+        CONTACT COMPONENT
+      </h2>
+      <div class="d-flex justify-content-center align-items-center my-3">
+        <div class="line me-3"></div>
+        <span><i class="fa-solid fa-star fa-1x text-dark-app"></i></span>
+        <div class="line ms-3"></div>
+      </div>
+    </div>
+    <div class="row py-5">
+      <div class="col-md-8 mx-auto my-4">
+        <div class="row row-cols-1 gy-2">
+          <div class="col input-box">
+            <label *ngIf="inputValueName">User Name :</label>
+            <input
+              (keyup)="showLableName($event)"
+              name="username"
+              placeholder="User Name"
+              type="text"
+              class="form-control my-2 input-lable"
+            />
+          </div>
+          <div class="col input-box">
+            <label *ngIf="inputValueEmail">User Email :</label>
+            <input
+              (keyup)="showLableEmail($event)"
+              placeholder="User Email"
+              type="email"
+              class="form-control my-2 input-lable"
+            />
+          </div>
+          <div class="col input-box">
+            <label *ngIf="inputValueAge">User Age :</label>
+            <input
+              (keyup)="showLableAge($event)"
+              name="age"
+              placeholder="User Age"
+              type="number"
+              class="form-control my-2 input-lable"
+            />
+          </div>
+          <div class="col input-box">
+            <label *ngIf="inputValuePassword">Your Password :</label>
+            <input
+              (keyup)="showLablePassword($event)"
+              name="username"
+              placeholder="User Password"
+              type="password"
+              class="form-control my-2 input-lable"
+            />
+          </div>
+          <div class="col mt-3">
+            <div class="row">
+              <div class="col-md-3 mx-auto">
+                <button class="btn bg-color text-white">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

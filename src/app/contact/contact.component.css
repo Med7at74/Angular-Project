@@ -1,0 +1,19 @@
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: rgb(44, 62, 80);
+}
+
+.bg-color {
+  background-color: rgb(26, 188, 156);
+}
+.text-dark-app {
+  color: rgb(44, 62, 80);
+}
+.input-box label {
+  transition: all 1s;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid darkgray;
+}

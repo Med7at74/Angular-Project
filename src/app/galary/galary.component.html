@@ -1,0 +1,49 @@
+<section class="py-5 position-relative">
+  <div class="container py-4">
+    <div class="pt-4">
+      <h2 class="text-center fw-bolder fs-1 text-dark-app">
+        PORTFOLIO COMPONENT
+      </h2>
+      <div class="d-flex justify-content-center align-items-center my-3">
+        <div class="line me-3"></div>
+        <span><i class="fa-solid fa-star fa-1x text-dark-app"></i></span>
+        <div class="line ms-3"></div>
+      </div>
+    </div>
+    <div class="row g-5 text-dark-app row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div *ngFor="let item of images; index as i" class="col">
+        <div
+          (click)="getIndex( {i} )"
+          (click)="toggleImage()"
+          class="card rounded-2 position-relative"
+        >
+          <img class="w-100 rounded-2" [src]="item.img" alt="img" />
+
+          <div
+            class="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus fa-6x text-light"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !-  the container of the image thar apper whin click on any image  -->
+
+    <div
+      *ngIf="showImage"
+      class="row position-absolute top-0 start-0 end-0 bottom-0 overflow-hidden bg-opacity-50 bg-dark"
+    >
+      <div class="galary-show overflow-x-hidden">
+        <div
+          (keyup.x)="toggleImage()"
+          (click)="toggleImage()"
+          class="col-sm-5 mx-auto"
+        >
+          <img [src]="imgSrc" class="w-100 position-relative" alt="Image" />
+          <i class="fa-solid fa-camera text-white icons"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
